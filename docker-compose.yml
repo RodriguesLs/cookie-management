@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  app:
+    build:
+      context: .
+    container_name: app_test
+    restart: always
+    ports:
+      - "5000:5000"
+    tty: true
